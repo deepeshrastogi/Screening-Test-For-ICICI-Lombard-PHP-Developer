@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "8e56db12-0de5-4773-a952-20d9d395db7b",
+		"name": "Screening-Test-For-ICICI-Lombard-PHP-Developer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24958784"
+	},
+	"item": [
+		{
+			"name": "get the travel history of a user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8002/api/traveller",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"traveller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get count of distinct travellers against every city for a given period",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from_date\":\"2022-09-01\",\r\n    \"to_date\":\"2022-10-31\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8002/api/traveller/city",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8002",
+					"path": [
+						"api",
+						"traveller",
+						"city"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
